@@ -1,0 +1,31 @@
+{
+    "name": "diky22rp/chatifyarjuna",
+    "description": "A package for Laravel PHP Framework to add a complete real-time chat system. Custom package from chatify (munafio/chatify/) for Internal Company",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Diky Rizki Pratama",
+            "email": "diky.pratama9@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "pusher/pusher-php-server": "^3.4@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChatifyArjuna\\" : "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ChatifyArjuna\\ChatifyServiceProvider"
+            ],
+            "aliases": {
+                "ChatifyArjuna": "ChatifyArjuna\\Facades\\ChatifyMessenger"
+            }
+        }
+    }
+}
