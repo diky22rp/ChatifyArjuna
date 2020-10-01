@@ -39,6 +39,7 @@ $ php artisan vendor:publish --tag=chatify-config
 ```sh
 $ php artisan migrate
 ```
+note : add field "OnlineStatus" on table user login
 5. Storage Symlink
 ```sh
 $ php artisan storage:link
